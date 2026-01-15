@@ -13,11 +13,11 @@ function getHumanChoice() {
     return choice;
 }
 function playGame() {
-    // Bước 4: Khai báo biến điểm số bên trong playGame
+   
     let humanScore = 0;
     let computerScore = 0;
 
-    // Bước 5: Hàm xử lý một hiệp đấu
+  
     function playRound(humanChoice, computerChoice) {
         console.log(`Bạn chọn: ${humanChoice} - Máy chọn: ${computerChoice}`);
 
@@ -39,8 +39,7 @@ function playGame() {
         console.log("-----------------------");
     }
 
-    // Bước 6: Chơi 5 hiệp (Gọi hàm playRound 5 lần)
-    // Nếu bạn chưa học vòng lặp, hãy gọi thủ công như dưới đây:
+   
     
     for (let i = 1; i <= 5; i++) {
         console.log(`Hiệp ${i}:`);
@@ -49,7 +48,7 @@ function playGame() {
         playRound(humanSelection, computerSelection);
     }
 
-    // Thông báo kết quả cuối cùng
+   
     console.log("KẾT QUẢ CHUNG CUỘC:");
     if (humanScore > computerScore) {
         console.log("CHÚC MỪNG! Bạn là người chiến thắng cuối cùng!");
@@ -60,5 +59,5 @@ function playGame() {
     }
 }
 
-// Gọi hàm để bắt đầu trò chơi
+
 playGame();
